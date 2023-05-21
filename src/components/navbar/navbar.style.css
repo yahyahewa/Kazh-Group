@@ -1,0 +1,21 @@
+.nav .link {
+  margin: 10px 10px;
+  text-decoration: none;
+  display: block;
+  position: relative;
+  padding: 8px 10px;
+}
+
+.nav .link::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 1.5px;
+  background-color: #018ece;
+  transition: width 0.2s;
+}
+.nav .link:hover::before {
+  width: 100%;
+}
