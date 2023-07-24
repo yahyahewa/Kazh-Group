@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import Navbar from "../navbar/Navbar";
 function Services() {
   const [transform, setTransform] = useState({ x: 0, y: 0, z: "" });
   const handleMouseMove = (e) => {
