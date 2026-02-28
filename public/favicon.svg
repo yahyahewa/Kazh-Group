@@ -1,0 +1,36 @@
+<svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <linearGradient id="logo-accent-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#0066FF" />
+            <stop offset="100%" stop-color="#3399FF" />
+        </linearGradient>
+    </defs>
+    
+    <!-- Background for visibility in light/dark tabs if needed -->
+    <rect 
+        x="20" 
+        y="20" 
+        width="60" 
+        height="60" 
+        rx="12" 
+        stroke="url(#logo-accent-grad)" 
+        stroke-width="4"
+    />
+    
+    <path 
+        d="M40 35 L60 50 L40 65" 
+        stroke="#0066FF" 
+        stroke-width="5" 
+        stroke-linecap="round" 
+        stroke-linejoin="round"
+    />
+    
+    <circle 
+        cx="50" 
+        cy="50" 
+        r="35" 
+        stroke="#0066FF" 
+        stroke-opacity="0.2" 
+        stroke-width="2"
+    />
+</svg>

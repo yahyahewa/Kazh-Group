@@ -6,6 +6,19 @@ import { Inter, Montserrat, Vazirmatn, IBM_Plex_Sans_Arabic } from "next/font/go
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import "../globals.css";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: "Kazh Group",
+    description: "Kazh Group - Excellence in Construction & Renovation",
+    icons: {
+        icon: [
+            { url: "/favicon.svg?v=2", type: "image/svg+xml" },
+        ],
+        shortcut: ["/favicon.svg?v=2"],
+        apple: ["/favicon.svg?v=2"],
+    },
+};
 
 const inter = Inter({
     subsets: ["latin"],
