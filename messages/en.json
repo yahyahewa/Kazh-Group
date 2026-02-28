@@ -1,0 +1,194 @@
+{
+    "Header": {
+        "home": "Home",
+        "about": "About",
+        "services": "Services",
+        "projects": "Projects",
+        "contact": "Contact",
+        "getInTouch": "Get in Touch"
+    },
+    "Hero": {
+        "badge": "INNOVATING SINCE 2020",
+        "line1": "BUILDING",
+        "line2": "TOMORROW",
+        "line3": "TODAY.",
+        "subtitle": "A forward-thinking software group driving innovation in digital transformation and enterprise solutions.",
+        "ctaPrimary": "Our Services",
+        "ctaSecondary": "Learn More",
+        "stat1Value": "6+",
+        "stat1Label": "Years Excellence",
+        "stat3Value": "+50",
+        "stat3Label": "Global Partners",
+        "scroll": "Scroll Down"
+    },
+    "About": {
+        "badge": "OUR JOURNEY",
+        "title": "Our Path to",
+        "titleAccent": "Impact",
+        "subtitle": "From a bold idea to a leading software group — our timeline tells the story of persistent innovation and strategic growth.",
+        "milestones": {
+            "2020": {
+                "title": "Foundation",
+                "description": "Kazh Group was founded with a vision to bridge the gap between technology and infrastructure, starting a journey of persistent innovation."
+            },
+            "2021": {
+                "title": "Digital Expansion",
+                "description": "Launched our digital solutions division, providing enterprise-grade software to regional and international clients."
+            },
+            "2022": {
+                "title": "Infrastructure Milestone",
+                "description": "Expanded into major infrastructure projects, partnering with government and private sector leaders."
+            },
+            "2023": {
+                "title": "Global Reach",
+                "description": "Developed strategic partnerships across 4 countries, taking our software solutions and impact global."
+            },
+            "2024": {
+                "title": "Innovation Lab",
+                "description": "Started our Innovation R&D lab focusing on AI integration and next-generation enterprise software solutions."
+            },
+            "2025": {
+                "title": "The Future",
+                "description": "Leading the next wave of digital transformation with scalable cloud architecture and advanced software infrastructure."
+            }
+        }
+    },
+    "Services": {
+        "badge": "WHAT WE DO",
+        "title": "",
+        "titleAccent": "Our Services",
+        "subtitle": "Comprehensive solutions across the full spectrum of software technology and digital transformation, tailored for tomorrow's enterprises.",
+        "webDev": {
+            "title": "Web Development",
+            "description": "High-performance websites and advanced web applications built with the latest frameworks."
+        },
+        "mobileApp": {
+            "title": "Mobile Apps",
+            "description": "Native and cross-platform mobile solutions for iOS and Android with premium UX."
+        },
+        "databaseDesign": {
+            "title": "Database Design",
+            "description": "Engineering robust, scalable, and highly secure data architecture optimized for performance."
+        },
+        "windowsForm": {
+            "title": "Windows Forms",
+            "description": "Powerful desktop applications for the Windows environment with rich UI and speed."
+        },
+        "itTraining": {
+            "title": "IT Training",
+            "description": "Empowering teams with the latest technical skills through comprehensive training programs."
+        },
+        "itConsulting": {
+            "title": "IT Consulting",
+            "description": "Strategic advisory services to help organizations navigate digital transformation."
+        },
+        "uiUxDesign": {
+            "title": "UI/UX Design",
+            "description": "Crafting intuitive, beautiful, and user-centric interfaces that drive engagement."
+        },
+        "cyberSecurity": {
+            "title": "Cyber Security",
+            "description": "Advanced threat protection and professional bug bounty programs to discover vulnerabilities."
+        },
+        "support": {
+            "title": "24/7 Support",
+            "description": "Round-the-clock technical support and maintenance to ensure your systems always perform."
+        }
+    },
+    "Projects": {
+        "badge": "OUR PORTFOLIO",
+        "title": "Featured",
+        "titleAccent": "Projects",
+        "subtitle": "Showcasing our most impactful work across technology, infrastructure, and digital innovation.",
+        "viewProject": "View Project",
+        "allProjects": "All",
+        "filterTech": "Software",
+        "filterInfra": "Enterprise",
+        "filterDigital": "Digital",
+        "project1": {
+            "title": "Enterprise ERP System",
+            "category": "Software",
+            "description": "A comprehensive ERP system managing internal operations and supply chain for major organizations."
+        },
+        "project2": {
+            "title": "Enterprise Cloud Migration",
+            "category": "Software",
+            "description": "Migration of legacy systems for a Fortune 500 company to hybrid cloud architecture, reducing costs by 40%."
+        },
+        "project3": {
+            "title": "Cloud Warehouse System",
+            "category": "Enterprise",
+            "description": "A robust real-time inventory and warehouse management system optimized for high-density logistics."
+        },
+        "project4": {
+            "title": "AI Analytics Suite",
+            "category": "Digital",
+            "description": "Building a real-time analytics platform processing 10M+ data points daily for predictive business intelligence."
+        },
+        "project5": {
+            "title": "Government Digital Portal",
+            "category": "Digital",
+            "description": "Developing a digital services portal for citizens serving 5M+ users with 99.9% uptime SLA."
+        },
+        "project6": {
+            "title": "FinTech Payment Gateway",
+            "category": "Enterprise",
+            "description": "Secure, scalable payment processing engine handling thousands of transactions per second."
+        }
+    },
+    "Contact": {
+        "badge": "GET IN TOUCH",
+        "title": "Let's Build",
+        "titleAccent": "Together",
+        "subtitle": "Have a project in mind? We'd love to discover how Kazh Group can drive your vision forward. Reach out and start the conversation.",
+        "emailLabel": "Email",
+        "emailValue": "kazhgr@gmail.com",
+        "phoneLabel": "Phone",
+        "phoneValue": "+964 770 030 7070",
+        "locationLabel": "Established",
+        "locationValue": "Innovating globally since 2020",
+        "formName": "Full Name",
+        "formNamePlaceholder": "Full Name",
+        "formEmail": "Email Address",
+        "formEmailPlaceholder": "email@company.com",
+        "formMessage": "Message",
+        "formMessagePlaceholder": "Tell us about your project...",
+        "formSubmit": "Send Message"
+    },
+    "Emails": {
+        "adminSubject": "🚀 New Inquiry: {name}",
+        "adminTitle": "New Message Received",
+        "clientSubject": "Thank you for reaching out, {name}!",
+        "clientTitle": "We've Received Your Message",
+        "clientGreeting": "Hello {name}, thank you for contacting Kazh Group.",
+        "clientBody": "Our team has received your inquiry and is currently reviewing the details. We pride ourselves on building the digital landscape of tomorrow, and we are excited to explore how we can collaborate together.",
+        "clientFooter": "One of our specialists will reach out to you shortly.",
+        "team": "Kazh Group Team",
+        "slogan": "Software • Innovation • Impact"
+    },
+    "Footer": {
+        "tagline": "Building tomorrow's digital landscapes with today's software innovation. A forward-thinking group shaping the future.",
+        "company": "Company",
+        "companyLinks": [
+            "About",
+            "Impact",
+            "Partners",
+            "Press"
+        ],
+        "services": "Services",
+        "serviceLinks": [
+            "Software",
+            "Enterprise",
+            "Consulting",
+            "Digital"
+        ],
+        "resources": "Resources",
+        "resourceLinks": [
+            "Blog",
+            "Documentation",
+            "Support",
+            "Contact"
+        ],
+        "copyright": "© {year} KAZH GROUP. All rights reserved."
+    }
+}

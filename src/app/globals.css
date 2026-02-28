@@ -1,0 +1,190 @@
+@import "tailwindcss";
+
+:root {
+  --background: #0A0A0F;
+  --foreground: #E0E0E8;
+  --obsidian: #0A0A0F;
+  --slate-grey: #1E1E2E;
+  --cobalt: #0066FF;
+  --cobalt-glow: #3399FF;
+  --cobalt-dim: #003399;
+  --border-subtle: rgba(255, 255, 255, 0.06);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-obsidian: #0A0A0F;
+  --color-slate-grey: #1E1E2E;
+  --color-cobalt: #0066FF;
+  --color-cobalt-glow: #3399FF;
+  --color-cobalt-dim: #003399;
+  --color-border-subtle: rgba(255, 255, 255, 0.06);
+  --font-sans: var(--font-inter);
+  --font-heading: var(--font-montserrat);
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--obsidian);
+  color: var(--foreground);
+  font-family: var(--font-inter), system-ui, sans-serif;
+  overflow-x: hidden;
+}
+
+/* Localized Font Overrides */
+[lang='ckb'] body,
+[lang='ckb'] .font-sans {
+  font-family: var(--font-vazirmatn), 'Vazirmatn', 'Noto Sans Arabic', system-ui, sans-serif !important;
+}
+
+[lang='ckb'] .font-heading,
+[lang='ckb'] h1,
+[lang='ckb'] h2,
+[lang='ckb'] h3 {
+  font-family: var(--font-vazirmatn), 'Montserrat', sans-serif !important;
+  font-weight: 800;
+}
+
+[lang='ar'] body,
+[lang='ar'] .font-sans {
+  font-family: var(--font-ibm-plex-arabic), 'IBM Plex Sans Arabic', 'Noto Sans Arabic', system-ui, sans-serif !important;
+}
+
+[lang='ar'] .font-heading,
+[lang='ar'] h1,
+[lang='ar'] h2,
+[lang='ar'] h3 {
+  font-family: var(--font-ibm-plex-arabic), 'Montserrat', sans-serif !important;
+  font-weight: 800;
+}
+
+/* Grain Overlay */
+.grain-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 9999;
+  opacity: 0.035;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+  background-repeat: repeat;
+  background-size: 128px 128px;
+}
+
+/* Glassmorphism */
+.glass {
+  background: rgba(30, 30, 46, 0.4);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 0.5px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-strong {
+  background: rgba(30, 30, 46, 0.65);
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
+  border: 0.5px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Neon Glow Effects */
+.glow-cobalt {
+  box-shadow: 0 0 20px rgba(0, 102, 255, 0.15),
+    0 0 60px rgba(0, 102, 255, 0.08);
+}
+
+.glow-cobalt-strong {
+  box-shadow: 0 0 30px rgba(0, 102, 255, 0.3),
+    0 0 80px rgba(0, 102, 255, 0.15),
+    0 0 120px rgba(0, 102, 255, 0.05);
+}
+
+.text-glow {
+  text-shadow: 0 0 40px rgba(0, 102, 255, 0.3),
+    0 0 80px rgba(0, 102, 255, 0.1);
+}
+
+/* Ultra-thin borders */
+.border-ultra-thin {
+  border-width: 0.5px;
+  border-color: rgba(255, 255, 255, 0.08);
+}
+
+/* Liquid Button */
+.liquid-btn {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.liquid-btn::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background: radial-gradient(circle, rgba(51, 153, 255, 0.4) 0%, transparent 70%);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: width 0.6s ease, height 0.6s ease;
+}
+
+.liquid-btn:hover::before {
+  width: 300%;
+  height: 300%;
+}
+
+.liquid-btn:hover {
+  box-shadow: 0 0 30px rgba(0, 102, 255, 0.4),
+    0 0 60px rgba(0, 102, 255, 0.2),
+    inset 0 0 30px rgba(0, 102, 255, 0.1);
+  border-color: rgba(0, 102, 255, 0.5);
+  transform: scale(1.02);
+}
+
+/* Timeline Line Glow */
+.timeline-line {
+  background: linear-gradient(to bottom, transparent, var(--cobalt), var(--cobalt-glow), var(--cobalt), transparent);
+}
+
+/* Section Separator */
+.section-sep {
+  height: 1px;
+  background: linear-gradient(to right, transparent, rgba(0, 102, 255, 0.2), transparent);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--obsidian);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 102, 255, 0.3);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 102, 255, 0.5);
+}
+
+/* Selection */
+::selection {
+  background: rgba(0, 102, 255, 0.3);
+  color: #fff;
+}
+
+/* Canvas container */
+.canvas-container canvas {
+  outline: none;
+}
