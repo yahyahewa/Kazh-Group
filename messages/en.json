@@ -209,10 +209,6 @@
                 "a": "Absolutely. We offer 24/7 technical support and maintenance packages to ensure your systems remain secure, updated, and optimized for performance long after the initial launch."
             },
             {
-                "q": "Which technologies do you work with?",
-                "a": "Our core stack includes modern frameworks like Next.js, React, and Node.js. We also specialize in robust database systems (PostgreSQL, MongoDB) and cloud infrastructure on AWS and Azure."
-            },
-            {
                 "q": "How can I get a custom quote?",
                 "a": "The easiest way is to use our Contact form or reach out via email. We'll schedule a discovery call to understand your requirements and provide a comprehensive proposal."
             }
