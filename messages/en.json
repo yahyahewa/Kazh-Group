@@ -169,26 +169,53 @@
     "Footer": {
         "tagline": "Building tomorrow's digital landscapes with today's software innovation. A forward-thinking group shaping the future.",
         "company": "Company",
+        "menu": "Menu",
         "companyLinks": [
-            "About",
-            "Impact",
-            "Partners",
-            "Press"
+            "About"
         ],
+        "faq": "FAQ",
         "services": "Services",
         "serviceLinks": [
-            "Software",
-            "Enterprise",
-            "Consulting",
-            "Digital"
+            "Consulting"
         ],
         "resources": "Resources",
         "resourceLinks": [
-            "Blog",
-            "Documentation",
-            "Support",
             "Contact"
         ],
         "copyright": "© {year} KAZH GROUP. All rights reserved."
+    },
+    "NotFound": {
+        "title": "404",
+        "heading": "Page Not Found",
+        "subheading": "The digital landscape you're looking for doesn't exist or has been moved.",
+        "cta": "Back to Home"
+    },
+    "FAQ": {
+        "badge": "HELP CENTER",
+        "title": "Frequently Asked",
+        "titleAccent": "Questions",
+        "subtitle": "Everything you need to know about our services, processes, and how we build the digital landscape of tomorrow.",
+        "items": [
+            {
+                "q": "What services does Kazh Group provide?",
+                "a": "We specialize in end-to-end software development, including enterprise web applications, mobile apps, custom database architecture, and strategic IT consulting. Our focus is on scalable, future-proof solutions."
+            },
+            {
+                "q": "How long does a typical project take?",
+                "a": "Timelines vary based on complexity. A standard web solution typically takes 4-8 weeks, while complex enterprise systems may take 3-6 months. We provide a detailed roadmap during the discovery phase."
+            },
+            {
+                "q": "Do you provide post-launch support?",
+                "a": "Absolutely. We offer 24/7 technical support and maintenance packages to ensure your systems remain secure, updated, and optimized for performance long after the initial launch."
+            },
+            {
+                "q": "Which technologies do you work with?",
+                "a": "Our core stack includes modern frameworks like Next.js, React, and Node.js. We also specialize in robust database systems (PostgreSQL, MongoDB) and cloud infrastructure on AWS and Azure."
+            },
+            {
+                "q": "How can I get a custom quote?",
+                "a": "The easiest way is to use our Contact form or reach out via email. We'll schedule a discovery call to understand your requirements and provide a comprehensive proposal."
+            }
+        ]
     }
 }
