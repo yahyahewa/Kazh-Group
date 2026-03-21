@@ -12,6 +12,7 @@ export default function ContactSection() {
     const [formState, setFormState] = useState({
         name: "",
         email: "",
+        middle_name: "", // Honeypot field
         message: "",
     });
 
@@ -73,7 +74,7 @@ export default function ContactSection() {
 
             if (response.ok) {
                 setStatus("success");
-                setFormState({ name: "", email: "", message: "" });
+                setFormState({ name: "", email: "", middle_name: "", message: "" });
 
                 // Set 60s cooldown
                 const now = Date.now();
@@ -186,6 +187,21 @@ export default function ContactSection() {
                                     className="w-full bg-white/5 border border-white/10 rounded-xl px-5 py-3.5 text-white text-sm placeholder:text-white/20 focus:outline-none focus:border-cobalt/40 focus:ring-1 focus:ring-cobalt/20 transition-all duration-300"
                                 />
                             </div>
+
+                            {/* Honeypot field - Invisible to humans */}
+                            <div className="absolute opacity-0 -z-10 pointer-events-none h-0 w-0 overflow-hidden" aria-hidden="true">
+                                <label htmlFor="middle_name">Middle Name</label>
+                                <input
+                                    id="middle_name"
+                                    type="text"
+                                    name="middle_name"
+                                    tabIndex={-1}
+                                    value={formState.middle_name}
+                                    onChange={handleChange}
+                                    autoComplete="off"
+                                />
+                            </div>
+
                             <div>
                                 <label className="block text-xs text-white/40 tracking-wider uppercase mb-2">
                                     {t("formEmail")}

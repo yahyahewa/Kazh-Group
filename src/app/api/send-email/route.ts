@@ -9,7 +9,13 @@ const COOLDOWN_DURATION = 60 * 1000; // 60 seconds
 
 export async function POST(req: Request) {
     try {
-        const { name, email, message, locale = 'en' } = await req.json();
+        const { name, email, middle_name, message, locale = 'en' } = await req.json();
+
+        // Honeypot check
+        if (middle_name) {
+            console.log('Bot submission detected via honeypot');
+            return NextResponse.json({ message: 'Emails sent successfully' }, { status: 200 });
+        }
 
         // Rate limiting logic
         const ip = req.headers.get('x-forwarded-for') || 'anonymous';
